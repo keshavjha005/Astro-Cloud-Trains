@@ -1,0 +1,92 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 260 15% 10%;
+    --foreground: 260 10% 95%;
+
+    --card: 260 15% 15%;
+    --card-foreground: 260 10% 95%;
+
+    --popover: 260 15% 15%;
+    --popover-foreground: 260 10% 95%;
+
+    --primary: 265 70% 75%;
+    --primary-foreground: 260 10% 5%;
+
+    --secondary: 260 15% 30%;
+    --secondary-foreground: 260 10% 95%;
+
+    --muted: 260 15% 20%;
+    --muted-foreground: 260 10% 70%;
+
+    --accent: 270 70% 75%;
+    --accent-foreground: 260 10% 5%;
+
+    --destructive: 350 80% 55%;
+    --destructive-foreground: 260 10% 95%;
+
+    --border: 260 15% 25%;
+    --input: 260 15% 25%;
+    --ring: 265 70% 75%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 260 15% 12%;
+    --sidebar-foreground: 260 10% 90%;
+    --sidebar-primary: 265 70% 75%;
+    --sidebar-primary-foreground: 260 10% 5%;
+    --sidebar-accent: 260 15% 20%;
+    --sidebar-accent-foreground: 260 10% 90%;
+    --sidebar-border: 260 15% 25%;
+    --sidebar-ring: 265 70% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground min-h-screen bg-cosmic-gradient overflow-x-hidden;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  .star {
+    @apply absolute bg-white rounded-full animate-pulse-star;
+    box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 5px rgba(214, 188, 250, 0.7);
+  }
+  
+  .cosmic-border {
+    @apply border border-cosmic-light/30 rounded-lg shadow-lg;
+    box-shadow: 0 0 15px rgba(214, 188, 250, 0.2);
+  }
+
+  .cosmic-glass {
+    @apply bg-cosmic-dark/60 backdrop-blur-md border border-cosmic-light/20 rounded-lg;
+  }
+}
+
+/* Star field animation */
+@layer components {
+  .star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+}
