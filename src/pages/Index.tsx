@@ -78,7 +78,7 @@ const Index = () => {
       
       <footer className="mt-auto py-8 cosmic-glass">
         <div className="container mx-auto px-4 text-center text-cosmic-light/60 text-sm">
-          <p>© 2025 Astral Access | Cosmic Guidance for Your Journey</p>
+          <p>© 2025 Astro | Cloud Trains keshav </p>
         </div>
       </footer>
     </div>

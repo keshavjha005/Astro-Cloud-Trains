@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center justify-center rounded-full overflow-hidden bg-cosmic-accent/20 w-10 h-10">
                   <span className="text-xl font-bold animate-float">✨</span>
                 </div>
-                <span className="ml-2 text-xl font-bold text-cosmic-light text-glow">Astral Access</span>
+                <span className="ml-2 text-xl font-bold text-cosmic-light text-glow">Astro</span>
               </a>
             </div>
 
